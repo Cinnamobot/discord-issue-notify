@@ -30,6 +30,10 @@ on:
   issues:
     types: [opened, closed, deleted]
 
+permissions:
+  issues: read
+  contents: read
+
 jobs:
   notify:
     uses: Cinnamobot/discord-issue-notify/.github/workflows/notify.yml@main
